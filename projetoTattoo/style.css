@@ -2,14 +2,18 @@
   .navbar-scroll {
     background-color: #fff;
   }
-     
- 
+
+
 
   .navbar-scroll .navbar-brand,
   .navbar-scroll .nav-link,
   .navbar-scroll .fa-bars {
-    color: #4f4f4f !important;
-  }         
+    color: #ffa600 !important;
+  }
+}
+
+.imagem:hover {
+  -webkit-text-fill-color: coral;
 }
 
 .navbar-brand {
@@ -17,6 +21,7 @@
   font-size: 2rem;
   font-weight: 500;
 }
+
 .navbar-scroll .navbar-brand,
 .navbar-scroll .nav-link,
 .navbar-scroll .fa-bars {
@@ -34,7 +39,7 @@
 .navbar-scrolled .navbar-brand,
 .navbar-scrolled .nav-link,
 .navbar-scrolled .fa-bars {
-  color: #4f4f4f;
+  color: #e68200;
 }
 
 .navbar-scrolled {
@@ -71,18 +76,23 @@
 }
 
 .dark-footer {
-    background-color: #040404; /* Cor de fundo escura */
-    color: #fff; /* Cor do texto branca */
+  background-color: #040404;
+  /* Cor de fundo escura */
+  color: #fff;
+  /* Cor do texto branca */
 }
 
 .dark-footer .nav-link {
-    color: #fff !important; /* Cor dos links */
+  color: #fff !important;
+  /* Cor dos links */
 }
 
 .dark-footer .nav-link:hover {
-    color: #ccc !important; /* Cor dos links ao passar o mouse */
+  color: #f07400 !important;
+  /* Cor dos links ao passar o mouse */
 }
 
 .dark-footer .border-bottom {
-    border-color: #444 !important; /* Cor da borda inferior */
+  border-color: #444 !important;
+  /* Cor da borda inferior */
 }
