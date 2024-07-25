@@ -8,12 +8,12 @@
   .navbar-scroll .navbar-brand,
   .navbar-scroll .nav-link,
   .navbar-scroll .fa-bars {
-    color: #ffa600 !important;
+    color: #4f4f4f !important;
   }
 }
 
-.imagem:hover {
-  -webkit-text-fill-color: coral;
+#butao:hover {
+  color: chocolate;
 }
 
 .navbar-brand {
@@ -39,7 +39,7 @@
 .navbar-scrolled .navbar-brand,
 .navbar-scrolled .nav-link,
 .navbar-scrolled .fa-bars {
-  color: #e68200;
+  color: #4f4f4f;
 }
 
 .navbar-scrolled {
@@ -88,7 +88,7 @@
 }
 
 .dark-footer .nav-link:hover {
-  color: #f07400 !important;
+  color: #ccc !important;
   /* Cor dos links ao passar o mouse */
 }
 
