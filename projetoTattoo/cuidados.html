@@ -33,6 +33,9 @@
           <li class="nav-item">
             <a id="butao" class="nav-link" href="contatos.html">Contact</a>
           </li>
+          <li class="nav-item">
+            <a id="butao" class="nav-link" href="login.html">Login</a>
+          </li>
         </ul>
         <ul class="navbar-nav d-flex flex-row ml-auto">
           <li class="nav-item me-3 me-lg-0">
@@ -73,33 +76,55 @@
 
 <!------------------------------------------------------ BODY ------------------------------------------------------>
 <body style="background-image: url(./images/background.png);">
-  <main style="background-image: url(./images/background2.png);">
-    <form>
-      <div class="col-12 text-center">
-        <h4 class="mb-0 text-white display-2">Cuidados a ter</h4>
-      </div>
 
-      <div class="container px-4 py-5" id="custom-cards">
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop1"
-                style="width: 100%; color: black; background-color: white; border-color: white;">
-          Tatuagens
-        </button>
+    <div class="container px-4 py-5" id="hanging-icons">
+      <h3 class="mb-4 text-white display-3" style="color: white;">Tattoos & Piercing care</h3>
+    
+    
+      <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+        <div class="col d-flex align-items-start">
+          <div class="icon-square text-body-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+            <svg style="color:rgba(218, 124, 0, 0.701); width:30px; height:60px;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-highlighter" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M11.096.644a2 2 0 0 1 2.791.036l1.433 1.433a2 2 0 0 1 .035 2.791l-.413.435-8.07 8.995a.5.5 0 0 1-.372.166h-3a.5.5 0 0 1-.234-.058l-.412.412A.5.5 0 0 1 2.5 15h-2a.5.5 0 0 1-.354-.854l1.412-1.412A.5.5 0 0 1 1.5 12.5v-3a.5.5 0 0 1 .166-.372l8.995-8.07zm-.115 1.47L2.727 9.52l3.753 3.753 7.406-8.254zm3.585 2.17.064-.068a1 1 0 0 0-.017-1.396L13.18 1.387a1 1 0 0 0-1.396-.018l-.068.065zM5.293 13.5 2.5 10.707v1.586L3.707 13.5z"/>
+            </svg>
+          </div>
+          <div>
+            <h3 class="mb-0 display-5" style="color: rgb(129, 129, 129);">Tattoos</h3>
+            <p style="color: whitesmoke;">The healing time for tattoos depending on several factors, including the individual's skin type, the size and location of the tattoo, and how well aftercare instructions are followed.</p>
+          
+            <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">Read more</button>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <div class="icon-square text-body-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+            <svg style="color:rgba(218, 124, 0, 0.701); width:30px; height:60px;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-arrow" viewBox="0 0 16 16">
+              <path d="M6.707 9h4.364c-.536 1.573 2.028 3.806 4.929-.5-2.9-4.306-5.465-2.073-4.929-.5H6.707L4.854 6.146a.5.5 0 1 0-.708.708L5.293 8h-.586L2.854 6.146a.5.5 0 1 0-.708.708L3.293 8h-.586L.854 6.146a.5.5 0 1 0-.708.708L1.793 8.5.146 10.146a.5.5 0 0 0 .708.708L2.707 9h.586l-1.147 1.146a.5.5 0 0 0 .708.708L4.707 9h.586l-1.147 1.146a.5.5 0 0 0 .708.708z"/>
+            </svg>
+            </div>
+          <div>
+            <h3 class="mb-0 display-5" style="color: rgb(133, 133, 133);">Piercings</h3>
+            <p style="color: whitesmoke;">Proper care for piercings is crucial to prevent infections and ensure smooth healing. Following aftercare guidelines diligently helps maintain the health and appearance of your new piercing.</p>
+          
+            <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">Read more</button>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <div class="icon-square text-body-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+            <svg style="color:rgba(218, 124, 0, 0.701); width:30px; height:60px;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bandaid-fill" viewBox="0 0 16 16">
+              <path d="m2.68 7.676 6.49-6.504a4 4 0 0 1 5.66 5.653l-1.477 1.529-5.006 5.006-1.523 1.472a4 4 0 0 1-5.653-5.66l.001-.002 1.505-1.492.001-.002Zm5.71-2.858a.5.5 0 1 0-.708.707.5.5 0 0 0 .707-.707ZM6.974 6.939a.5.5 0 1 0-.707-.707.5.5 0 0 0 .707.707M5.56 8.354a.5.5 0 1 0-.707-.708.5.5 0 0 0 .707.708m2.828 2.828a.5.5 0 1 0-.707-.707.5.5 0 0 0 .707.707m1.414-2.121a.5.5 0 1 0-.707.707.5.5 0 0 0 .707-.707m1.414-.707a.5.5 0 1 0-.706-.708.5.5 0 0 0 .707.708Zm-4.242.707a.5.5 0 1 0-.707.707.5.5 0 0 0 .707-.707m1.414-.707a.5.5 0 1 0-.707-.708.5.5 0 0 0 .707.708m1.414-2.122a.5.5 0 1 0-.707.707.5.5 0 0 0 .707-.707M8.646 3.354l4 4 .708-.708-4-4zm-1.292 9.292-4-4-.708.708 4 4z"/>
+            </svg>
+            </div>
+          <div>
+            <h3 class="mb-0 display-5" style="color: rgb(129, 129, 129);">Piercing healing</h3>
+            <p style="color: whitesmoke;">The healing time for piercings varies widely depending on the location of the piercing and individual factors. Proper aftercare is essential to prevent infections.</p>
+            <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#staticBackdrop3">Read more</button>
+          
+          </div>
+        </div>
       </div>
+    </div>
 
-      <div class="container px-4 py-5" style="margin-top: -20px;" id="custom-cards">
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop2"
-                style="width: 100%; color: black; background-color: white; border-color: white;">
-          Piercings
-        </button>
-      </div>
-
-      <div class="container px-4 py-5" style="margin-top: -20px;" id="custom-cards">
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop3"
-                style="width: 100%; color: black; background-color: white; border-color: white;">
-          Tempo de Cicatrização de Piercings
-        </button>
-      </div>
-    </form>
+    <!----------------------------------------- TESTE ----------------------------------------------->
 
     <!------------------------------------------ MODAL ------------------------------------------------------->
     <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
@@ -353,7 +378,7 @@
 
 <!--------------------------------- FOOTER------------------------------------>
 
-<footer class="py-5 py-3 py-md-5 py-xl-8 py-xxl-10" style="background-image: url(./images/background3.png);">
+<footer class="py-5 py-3 py-md-5 py-xl-8 py-xxl-10" style="background-image: url(./images/background4.png);">
 
     <!-- Widgets Link & Add - Bootstrap Brain Component -->
     <div class="py-3 py-md-5 py-xl-8 py-xxl-10">
