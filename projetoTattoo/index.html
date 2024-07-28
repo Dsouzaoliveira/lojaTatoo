@@ -36,9 +36,6 @@
               <a id="butao" class="nav-link" href="contatos.html">Contact</a>
             </li>
             <li class="nav-item">
-              <a id="butao" class="nav-link" href="cuidados.html">Cuidados a ter</a>
-            </li>
-            <li class="nav-item">
               <a id="butao" class="nav-link" href="login.html">Login</a>
             </li>
           </ul>
@@ -211,7 +208,7 @@
       </div>
 
       <!---------------------------------------TATTOO OR PIERCING ----------------------------------------------->
-      <section style="background-image: url();">
+      <section style="background-image: url(./images/background3.png);">
       <div class="container my-1 mb-4">
         <div class="p-1 text-center ">
           <svg class= "bi mt-4 mb-3" style="color:rgba(218, 124, 0, 0.449)" width="100" height="100" ><svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
@@ -220,7 +217,7 @@
           <h1 class="display-4 fst-italic" style="color: white;">Do you want to get a tattoo or a piercing?</h1>
          
           <br>
-          <div class="d-inline-flex gap-4 mb mt-4">
+          <div class="d-inline-flex gap-4 mb mt-4" >
             <button class="btn btn-outline-light btn-lg px-4 rounded-pill" type="button">
               Get a tattoo
             </button>
@@ -234,9 +231,18 @@
         
       </div>
       
-    </section>
+<!---------------------------------------- CUIDADOS A TER -------------------------------------------------->
+<div class="container" >
+  <div class="position-relative text-center text-muted rounded-5" >
+  
+    <h1 class="display-4 fst-italic mt-5 mb-4" style="color: white; font-size: 2rem;">Tattoo & Piercing care</h1>
+    <button class="btn btn-outline-secondary px-3 mb-5 rounded-pill" type="button" onclick="redirectToCare()">
+      More information
+    </button>
+  </div>
+</div>
 
-
+   
 
 <!--------------------------------- FOOTER------------------------------------>
 
@@ -341,6 +347,11 @@
   </div>
 
 </footer>
+<script>
+  function redirectToCare(){
+   window.location.href = "cuidados.html";
+ }
+ </script>
 <script>
     function toggleNavbar() {
       var navbarContent = document.getElementById('navbarSupportedContent');
