@@ -3,8 +3,6 @@
     background-color: #fff;
   }
 
-
-
   .navbar-scroll .navbar-brand,
   .navbar-scroll .nav-link,
   .navbar-scroll .fa-bars {
@@ -97,6 +95,7 @@
   /* Cor da borda inferior */
 }
 
-#butao:hover{
+#butao:hover {
   color: chocolate;
 }
+
