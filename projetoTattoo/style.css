@@ -99,3 +99,13 @@
   color: chocolate;
 }
 
+#btn-back-to-top {
+  border-radius:100%;
+  position: fixed;
+  bottom: 70px;
+  right: 70px;
+  display: none;
+  background-color: rgb(255, 145, 0);
+  border-color: rgb(255, 167, 4);
+  opacity: 0.7;
+}
