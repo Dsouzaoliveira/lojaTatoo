@@ -9,6 +9,11 @@ function redirectToIndex(){
     window.location.href = "cuidados.html";
   }
 
+  //Função que quando chamada onClick redireciona para a página Contactos
+  function redirectToContactos() {
+    window.location.href = "contatos.html";
+  }
+
 
   //Função que torna navbar responsiva, quando página é reduzida a navbar transforma-se numa dropdown list
   function toggleNavbar() {

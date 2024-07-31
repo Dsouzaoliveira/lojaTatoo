@@ -37,9 +37,6 @@
             <li class="nav-item" style="font-size: 1rem;">
               <a id="butao" class="nav-link" href="#aboutus">About</a>
             </li>
-            <li class="nav-item" style="font-size: 1rem;">
-              <a id="butao" class="nav-link" href="#!">Services</a>
-            </li>
             <li class="nav-item" style=" font-size: 1rem;">
               <a id="butao" class="nav-link" href="contatos.html">Contact</a>
             </li>
@@ -174,7 +171,7 @@
           style="opacity:0.6; background-image: url(./images/img1.png);" onMouseover="this.style.opacity=1"
           onMouseout="this.style.opacity=0.8" data-bs-toggle="modal" data-bs-target="#staticBackdrop6">
           <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold" >Tattoo Artist 1</h3>
+            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold" style="text-align: center;">Ink master</h3>
             <ul class="d-flex list-unstyled mt-auto">
               </li>
             </ul>
@@ -184,9 +181,9 @@
       <div class="col">
         <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
           style="opacity:0.6; background-image: url(./images/img2.png);" onMouseover="this.style.opacity=1"
-          onMouseout="this.style.opacity=0.6">
+          onMouseout="this.style.opacity=0.6" data-bs-toggle="modal" data-bs-target="#staticBackdrop7">
           <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Tattoo Artist 2</h3>
+            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold" style="text-align: center;">JS</h3>
 
           </div>
         </div>
@@ -194,9 +191,9 @@
       <div class="col">
         <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
           style="opacity:0.6; background-image: url(./images/img3.png);" onMouseover="this.style.opacity=1"
-          onMouseout="this.style.opacity=0.6">
+          onMouseout="this.style.opacity=0.6" data-bs-toggle="modal" data-bs-target="#staticBackdrop8">
           <div class="d-flex flex-column h-100 p-5 pb-6 text-shadow-1">
-            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold" >Tattoo Artist 3</h3>
+            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold" style="text-align: center;" >Ink Alchemist</h3>
             <ul class="d-flex list-unstyled mt-auto">
               <li class="me-auto">
               </li>
@@ -552,43 +549,91 @@
         </div>     
         </div>
          <!------------------------------------------- MODAL PARA TATTOO ARTIST1 ------------------------------------------------->
-      <div class="modal fade" id="staticBackdrop6" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-      aria-labelledby="staticBackdropLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-scrollable">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="staticBackdropLabel"><b>Fill the form for a piercing</b></h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+         <div class="modal fade" id="staticBackdrop6" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" style="max-width: 550px;">
+            <div class="modal-content" style=" background-color: aliceblue;
+    background-blend-mode: lighten;">
+              <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel"><b></b></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="px-4 pt-5 my-5 text-center border-bottom" >
+                <h1 class="display-4 fw-bold text-body-emphasis">Ink Master</h1>
+                <div class="col-lg-6 mx-auto">
+                  <p class="lead mb-4">"Ink Master", 
+                    is a renowned tattoo artist with over 15 years of experience in the world of body art. His ability to transform ideas into works of art on the skin is unparalleled, he is famous for his detailed, realistic-style tattoos and his masterful use of vibrant colors.</p>
+          
+                </div>
+                <div class="overflow-hidden" style="max-height: 30vh;">
+                  <div class="container px-5">
+                    <img src="./images/img1.png" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="500" height="500" loading="lazy">
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="modal-body">
-            <form>
-              <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label" ></label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Name">
-              </div>
-              <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label"></label>
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Email">
-              </div>
-              <div class="mb-3"><label class="form-label" for="message"><b>Share your idea</b></label><textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;" data-sb-validations="required"></textarea><div class="invalid-feedback" data-sb-feedback="message:required">Message is required.</div></div>
-              <div class="mb-3">
-                <label for="Default select example" class="form-label"><b>How did you hear about us?</b></label>
-              </div>
-              <div class="mb-3">
-                <select class="form-select" aria-label="Default select example">
-                  <option selected>Select One</option>
-                  <option value="1">Ad</option>
-                  <option value="2">Friend</option>
-                  <option value="3">Social media</option>
-                </select>
-              </div>        
-              <div class="d-grid"><button class="btn btn-dark btn-lg" type="submit">Submit</button></div>
-            </form>          
-          </div>
+        </div>
         </div>
        </div>
      </div>
 
+      <!------------------------------------------- MODAL PARA TATTOO ARTIST2 ------------------------------------------------->
+      <div class="modal fade" id="staticBackdrop7" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" style="max-width: 650px;">
+          <div class="modal-content" style=" background-color: rgb(240, 248, 255);
+  background-blend-mode: lighten;">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel"><b></b></h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="px-4 pt-5 my-5 text-center border-bottom" >
+              <h1 class="display-4 fw-bold text-body-emphasis">JS</h1>
+              <div class="col-lg-6 mx-auto">
+                <p class="lead mb-4">"JS", 
+                  began his artistic journey as an illustrator, which honed his talent for creating unique, personalized designs for each client. He is passionate about what he does and believes that each tattoo tells a story, making each project an intimate collaboration with the client. His dedication to perfection and artistic touch ensure that each tattoo is a masterpiece.</p>
+        
+              </div>
+              <div class="overflow-hidden" style="max-height: 30vh;">
+                <div class="container px-5">
+                  <img src="./images/img2.png" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="500" height="500" loading="lazy">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+     </div>
+   </div>
+
+     <!------------------------------------------- MODAL PARA TATTOO ARTIST3 ------------------------------------------------->
+     <div class="modal fade" id="staticBackdrop8" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" style="max-width: 650px;">
+        <div class="modal-content" style=" background-color: rgb(240, 248, 255);
+background-blend-mode: lighten;">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel"><b></b></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="px-4 pt-5 my-5 text-center border-bottom" >
+            <h1 class="display-4 fw-bold text-body-emphasis">Ink Alchemist</h1>
+            <div class="col-lg-6 mx-auto">
+              <p class="lead mb-4">"Ink Alchemist", 
+                has been transforming skin into living canvases for over a decade. Her journey began in a small town, where she was fascinated by the stories and cultures behind every tattoo. Her signature style blends intricate line work with vibrant watercolor techniques, creating pieces that are both visually striking and deeply personal. </p>
+      
+            </div>
+            <div class="overflow-hidden" style="max-height: 30vh;">
+              <div class="container px-5">
+                <img src="./images/img3.png" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="500" height="500" loading="lazy">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+   </div>
+ </div>
      <!------------------------------------------------- DIVISÃO PARA MODALS --------------------------------------------------------->
       </div>
 
