@@ -1,7 +1,7 @@
 
-//Função que quando chamada onClick redireciona para a página Index
+//Função que quando chamada onClick redireciona para a página homepage
 function redirectToIndex(){
-    window.location.href = "index.html";
+    window.location.href = "homepage.html";
   }
 
 //Função que quando chamada onClick redireciona para a página Cuidados
