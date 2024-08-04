@@ -146,3 +146,18 @@
 .social-link:hover {
   opacity: 1; /* Torna o ícone completamente opaco ao passar o mouse */
 }
+
+h1 {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+h4 {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
