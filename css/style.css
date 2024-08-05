@@ -196,12 +196,15 @@ h4 {
   right: 0;
   bottom: 0;
   background-color: black;
-  opacity: 0.5;
+  opacity: 0.6;
+  background-image: url(../projetoTattoo/images/backnewspiderlogo3.png);
   z-index: 1;
+
 }
 
 .hero__content{
   z-index: 1;
+
 }
 
 .hero__content-width{
