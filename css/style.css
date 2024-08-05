@@ -230,3 +230,67 @@ h4 {
   .container-custom {width: 1520px;}
 }
 
+.hero__scroll-btn{
+  position: absolute;
+  left: 50%;
+  bottom: 30px;
+  transform: translateX(-50%);
+  z-index: 1;
+  color: var(--bs-light);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+}
+
+.hero__scroll-btn:hover{
+  color: var(--bs-light);
+  opacity: 0.7;
+}
+
+.hero__scroll-btn .bi {
+  transition-delay: 0.8s;
+  animation: bounce 1s infinite alternate;
+}
+
+@keyframes bounce {
+  from{
+    transform: translateY(0px);
+  }
+  to{
+    transform: translateY(-10px);
+  }
+}
+
+html {scroll-behavior: smooth;}
+
+.steps{
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.steps__section-thumbnail{
+  height: 240px;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+@media (min-width: 544px){
+  .steps{
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .steps__section-thumbnail{
+    height: auto;
+  }
+}
+
+.steps__content-width{
+  max-width: 456px;
+  margin: 0 auto;
+}
+
+.steps--background{
+  background-color: rgba(68, 68, 68, 0.147);
+}
