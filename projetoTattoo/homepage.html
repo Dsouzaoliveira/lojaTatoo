@@ -11,27 +11,33 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     integrity="sha512-DyZ88lC6UnfKncj5fOTK4eZtx9P3zC3+HQj+4gB1EP1alO/bP3a1R6YLd5T1IR+d5f0zH5kaq5o3tVpBz5df7A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <script src="../js/main.js" defer></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Merienda:wght@300..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Merienda:wght@300..900&display=swap"
+    rel="stylesheet">
 </head>
+
 <body
   style="background-image: url(./images/backnewspiderlogo3.png); background-repeat: no-repeat; background-attachment: fixed; height:100vh; background-position:center">
   <header>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-scroll" id="navbar" style="background-color: rgba(0, 0, 0, 0.267); height: 90px">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-scroll" id="navbar"
+      style="background-color: rgba(0, 0, 0, 0.267); height: 90px">
       <div class="container">
-        
-        <a class="navbar-brand" href="#!" >
-          <img src="./images/Spider.png" alt="Logo" style="height: 40px; margin-left: 10px ;" >
+
+        <a class="navbar-brand" href="#!">
+          <img src="./images/Spider.png" alt="Logo" style="height: 40px; margin-left: 10px ;">
           <span class="brand-text" style="font-size: 15px; color:orange">Spider Tattoos.</span>
-         
+
         </a>
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16" style="color:rgb(196, 196, 196)">
-          <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
-          <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle"
+          viewBox="0 0 16 16" style="color:rgb(196, 196, 196)">
+          <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+          <path fill-rule="evenodd"
+            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
         </svg>
         <span class="brand-text" id="idUtilizador" style="color: coral; font-weight:400; margin-left: 7px;">Guest</span>
         <button class="navbar-toggler" type="button" onclick="toggleNavbar()" style="background-color: white;">
@@ -40,13 +46,15 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a id="butao" class="nav-link active" aria-current="page" href="#!" style="color: orange; font-size: 1rem; font-weight: bold;">Home</a>
+              <a id="butao" class="nav-link active" aria-current="page" href="#!"
+                style="color: orange; font-size: 1rem; font-weight: bold;">Home</a>
             </li>
             <li class="nav-item" style="font-size: 1rem;">
               <a id="butao" class="nav-link" href="#aboutus">About</a>
             </li>
             <li class="nav-item" style=" font-size: 1rem;">
-              <a id="butao" class="nav-link" href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop11">Contact</a>
+              <a id="butao" class="nav-link" href="" data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop11">Contact</a>
             </li>
             <li class="nav-item" style=" font-size: 1rem;">
               <a id="butao" class="nav-link" href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop10">Store</a>
@@ -59,12 +67,14 @@
             <li class="nav-item me-3 me-lg-0">
               <a class="nav-link" href="">
                 <span style="color:rgb(174, 174, 174); font-size:12px" id="totalCompras">0€</span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16" style="margin-bottom: 5px; color:grey">
-                  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart"
+                  viewBox="0 0 16 16" style="margin-bottom: 5px; color:grey">
+                  <path
+                    d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
                 </svg>
               </a>
             </li>
-        
+
             <li class="nav-item me-3 me-lg-0">
               <a class="nav-link social-link" href="https://www.facebook.com/SpiderTattoosPortugal/" target="_blank">
                 <i class="fab fa-facebook"></i>
@@ -80,15 +90,15 @@
       </div>
     </nav>
     <br>
-    <div class="position-relative" >
+    <div class="position-relative">
       <div class="position-absolute top-50 start-50 translate-middle-x " style="margin-top: 10%;">
         <div style="width: 700px; height: 280px; background-size: cover;
               background-repeat: no-repeat;
-             background-image: url(./images/spidersTransp.png);" >
+             background-image: url(./images/spidersTransp.png);">
         </div>
       </div>
-  
-              
+
+
     </div>
     <!-- Navbar -->
 
@@ -104,13 +114,13 @@
               background-size: cover;
               background-repeat: no-repeat;
               background-position: center;
-              ">         
-             </div>       
-          <div class="container d-flex justify-content-center align-items-center h-100">
-            <div class="row align-items-center">
-              <div class="col-12 text-center">
-              
-           
+              ">
+      </div>
+      <div class="container d-flex justify-content-center align-items-center h-100">
+        <div class="row align-items-center">
+          <div class="col-12 text-center">
+
+
           </div>
         </div>
       </div>
@@ -161,7 +171,7 @@
               <img src="./images/piercing.jpg" alt="" style="height: 300px; border-radius: 
                 3%;">
               <div class="card-body">
-                <p class="card-text fst" >Our professional piercers are skilled in a variety of piercing styles, from
+                <p class="card-text fst">Our professional piercers are skilled in a variety of piercing styles, from
                   classic ear piercings to more complex body modifications. We provide personalized care and aftercare
                   advice to help you achieve the perfect look.</p>
                 <div class="d-flex justify-content-between align-items-center">
@@ -212,7 +222,7 @@
           style="opacity:0.6; background-image: url(./images/img3.png);" onMouseover="this.style.opacity=1"
           onMouseout="this.style.opacity=0.6" data-bs-toggle="modal" data-bs-target="#staticBackdrop8">
           <div class="d-flex flex-column h-100 p-5 pb-6 text-shadow-1">
-            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold" style="text-align: center;" >Ink Alchemist</h3>
+            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold" style="text-align: center;">Ink Alchemist</h3>
             <ul class="d-flex list-unstyled mt-auto">
               <li class="me-auto">
               </li>
@@ -250,10 +260,12 @@
 
         <br>
         <div class="d-inline-flex gap-4 mb mt-4">
-          <button class="btn btn-outline-light btn-lg px-4 rounded-pill" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
+          <button class="btn btn-outline-light btn-lg px-4 rounded-pill" type="button" data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop2">
             Get a tattoo
           </button>
-          <button class="btn btn-outline-light btn-lg px-4 rounded-pill" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop3">
+          <button class="btn btn-outline-light btn-lg px-4 rounded-pill" type="button" data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop3">
             Get a piercing
           </button>
         </div>
@@ -269,14 +281,15 @@
           More information
         </button>
 
-<!------------------------- SEPARADOR DE WEVE BEEN EXPECTING YOU ------------------------------------------------------>
-        <div class ="container my-5">
+        <!------------------------- SEPARADOR DE WEVE BEEN EXPECTING YOU ------------------------------------------------------>
+        <div class="container my-5">
           <div class="row py-4">
 
             <div class="col-lg-4 mb-4 my-lg-auto">
               <h1 class="display-4 fst font-weight-bold mb-3" style="color:chocolate">We've been expecting you </h1>
-              <p class="fst text-light mb-4">Our studio specializes in custom designs and precision piercings, ensuring a safe and professional experience. Visit us today and transform your body art dreams into reality!</p>
-             
+              <p class="fst text-light mb-4">Our studio specializes in custom designs and precision piercings, ensuring
+                a safe and professional experience. Visit us today and transform your body art dreams into reality!</p>
+
             </div>
 
             <div class="col-lg-8"><img src="./images/tattoer.jpg" alt="" width="70%"></div>
@@ -290,361 +303,385 @@
                 <h4 style="color: rgb(255, 255, 255);">Looking for quality tattoos and piercing services?</h4>
               </div>
               <div class="col-md-5 col-lg-4 col-xl-3 pt-4 pt-md-0">
-                <a href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop11" class="btn btn-outline-light btn-lg">Contact Us Today</a>
+                <a href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop11"
+                  class="btn btn-outline-light btn-lg">Contact Us Today</a>
               </div>
             </div>
           </div>
         </div>
-    
-<!------------------------- SEPARADOR DE WEVE BEEN EXPECTING YOU ------------------------------------------------------>
-       
 
-    <!-------------------------------------------------------- REVIEWS ------------------------------------------------------------>
-    <!-- <div class='sk-ww-google-reviews' data-embed-id='25442812'></div> --> 
-    <!-- <script src='https://widgets.sociablekit.com/google-reviews/widget.js' async defer></script>  <-- REVIEWS -->
+        <!------------------------- SEPARADOR DE WEVE BEEN EXPECTING YOU ------------------------------------------------------>
 
-    <!--------------------------------- FOOTER------------------------------------>
-    
-   
 
-    <footer class="py-5 py-3 py-md-5 py-xl-8 py-xxl-10" style="background-image: url();">
+        <!-------------------------------------------------------- REVIEWS ------------------------------------------------------------>
+        <!-- <div class='sk-ww-google-reviews' data-embed-id='25442812'></div> -->
+        <!-- <script src='https://widgets.sociablekit.com/google-reviews/widget.js' async defer></script>  <-- REVIEWS -->
 
-      <!-- Widgets Link & Add - Bootstrap Brain Component -->
-      <div class="py-3 py-md-5 py-xl-8 py-xxl-10">
-        <div class="container">
-          <div class="row gy-4 gy-md-0">
-            <div class="col-12 col-md-6 ">
-              <div class="link-wrapper ">
-              </div>
-            </div>
-            <div class="col-12 col-md-6 ">
-              <section class="mb-4 mb-lg-5 mb-xl-7 ">
-                <div class="row">
+        <!--------------------------------- FOOTER------------------------------------>
+
+
+
+        <footer class="py-5 py-3 py-md-5 py-xl-8 py-xxl-10" style="background-image: url();">
+
+          <!-- Widgets Link & Add - Bootstrap Brain Component -->
+          <div class="py-3 py-md-5 py-xl-8 py-xxl-10">
+            <div class="container">
+              <div class="row gy-4 gy-md-0">
+                <div class="col-12 col-md-6 ">
+                  <div class="link-wrapper ">
+                  </div>
                 </div>
-              </section>
+                <div class="col-12 col-md-6 ">
+                  <section class="mb-4 mb-lg-5 mb-xl-7 ">
+                    <div class="row">
+                    </div>
+                  </section>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
 
-      <!-- Copyright & Links - Bootstrap Brain Component -->
-      <div>
-        <div class="container border-top border-dark py-3 py-md-5 py-xl-8 py-xxl-10 ">
-          <div class="row gy-3 align-items-lg-center">
-            <div class="col-12 col-lg-6 order-1 order-lg-0">
-              <div class="copyright-wrapper d-block mb-1 fs-7 text-light opacity-75 text-center text-lg-start"><img
-                  src="./images/Spider.png" alt="" style="height:40px">
-                Spider Tattoos 2024. Since 1989.
-              </div>
-              <div class="credit-wrapper d-block fs-9 text-light opacity-75 text-center text-lg-start">
+          <!-- Copyright & Links - Bootstrap Brain Component -->
+          <div>
+            <div class="container border-top border-dark py-3 py-md-5 py-xl-8 py-xxl-10 ">
+              <div class="row gy-3 align-items-lg-center">
+                <div class="col-12 col-lg-6 order-1 order-lg-0">
+                  <div class="copyright-wrapper d-block mb-1 fs-7 text-light opacity-75 text-center text-lg-start"><img
+                      src="./images/Spider.png" alt="" style="height:40px">
+                    Spider Tattoos 2024. Since 1989.
+                  </div>
+                  <div class="credit-wrapper d-block fs-9 text-light opacity-75 text-center text-lg-start">
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                  <section>
+                    <div class="row" style="align-items: end;">
+                      <div class="col-6">
+                        <div class="address-wrapper">
+                          <h4 class="mb-3 h5 text-white" style="align-items: end;">Address</h4>
+
+                          <address class="m-0 fs-7 text-light opacity-75">
+                            Rua do Cedofeita 389, 4050-181 Porto
+                          </address>
+                          <!-- <h4 class="mb-3 h6 text-white" style="align-items: end;">Google Maps Directions</h4> -->
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <div class="social-media-wrapper">
+                          <h4 class="mb-3 h5 text-white">Connect</h4>
+                          <ul class="m-0 list-unstyled d-flex justify-content-start gap-3">
+                            <button type="button" class="btn btn-outline-light" data-bs-toggle="modal"
+                              data-bs-target="#staticBackdrop1" style="width: 50%;">Google Maps
+                            </button>
+                            <li>
+                              <a href="https://www.facebook.com/SpiderTattoosPortugal/" target="_blank"
+                                class="link-opacity-75 link-opacity-100-hover link-light">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                  class="bi bi-facebook" viewBox="0 0 16 16">
+                                  <path
+                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                                </svg>
+                              </a>
+                            </li>
+
+
+                            <li>
+                              <a href="https://www.instagram.com/spidertattoosportugal/" target="_blank"
+                                class="link-opacity-75 link-opacity-100-hover link-light">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                  class="bi bi-instagram" viewBox="0 0 16 16">
+                                  <path
+                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                                </svg>
+
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
               </div>
             </div>
-            <div class="col-12 col-lg-6">
-              <section>
-                <div class="row" style="align-items: end;">
-                  <div class="col-6">
-                    <div class="address-wrapper">
-                      <h4 class="mb-3 h5 text-white" style="align-items: end;">Address</h4>
+          </div>
 
-                      <address class="m-0 fs-7 text-light opacity-75">
-                        Rua do Cedofeita 389, 4050-181 Porto
-                      </address>
-                      <!-- <h4 class="mb-3 h6 text-white" style="align-items: end;">Google Maps Directions</h4> -->
+          <!--MODAL para GOOGLE MAPS-->
+          <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="staticBackdropLabel">How to Get here</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <iframe style="max-width: 500px;"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3004.1306904356356!2d-8.621218388004964!3d41.153499510350024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2465022a48685f%3A0x931fe3612385a95b!2sSPIDER%20TATTOOS!5e0!3m2!1spt-PT!2spt!4v1722180751385!5m2!1spt-PT!2spt"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!------------------------------------------- MODAL PARA GET A TATTOO ------------------------------------------------->
+          <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="staticBackdropLabel"><b>Fill the form for a tattoo</b></h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label"></label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        placeholder="Name">
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label"></label>
+                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Email">
+                    </div>
+                    <div class="mb-3"><label class="form-label" for="message"><b>Share your idea</b></label><textarea
+                        class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;"
+                        data-sb-validations="required"></textarea>
+                      <div class="invalid-feedback" data-sb-feedback="message:required">Message is required.</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="Default select example" class="form-label"><b>How did you hear about us?</b></label>
+                    </div>
+                    <div class="mb-3">
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>Select One</option>
+                        <option value="1">Ad</option>
+                        <option value="2">Friend</option>
+                        <option value="3">Social media</option>
+                      </select>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleFormControlFile1" class="form-label">Upload tattoo idea</label>
+                      <input type="file" class="form-control" id="exampleFormControlFile1">
+                    </div>
+                    <div class="d-grid"><button class="btn btn-dark btn-lg" type="submit">Submit</button></div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!------------------------------------------- MODAL PARA GET A PIERCING ------------------------------------------------->
+          <div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="staticBackdropLabel"><b>Fill the form for a piercing</b></h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label"></label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        placeholder="Name">
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label"></label>
+                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Email">
+                    </div>
+                    <div class="mb-3"><label class="form-label" for="message"><b>Share your idea</b></label><textarea
+                        class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;"
+                        data-sb-validations="required"></textarea>
+                      <div class="invalid-feedback" data-sb-feedback="message:required">Message is required.</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="Default select example" class="form-label"><b>How did you hear about us?</b></label>
+                    </div>
+                    <div class="mb-3">
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>Select One</option>
+                        <option value="1">Ad</option>
+                        <option value="2">Friend</option>
+                        <option value="3">Social media</option>
+                      </select>
+                    </div>
+                    <div class="d-grid"><button class="btn btn-dark btn-lg" type="submit">Submit</button></div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!------------------------------------------- MODAL PARA LOGIN ------------------------------------------------->
+          <div class="modal fade" id="staticBackdrop4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog">
+              <div class="modal modal-sheet position-static d-block p-4 py-md-5" tabindex="-1" role="dialog"
+                id="modalSignin">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content rounded-4 shadow" style="background-color: rgb(228, 228, 228);">
+                    <div class="modal-header p-5 pb-4 border-bottom-0">
+                      <h1 class="fw-bold mb-0 fs-2">Login</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                        fdprocessedid="jpdo3" onclick="closeModal('staticBackdrop4')">
+                      </button>
+                    </div>
+
+                    <div class="modal-body p-5 pt-0">
+                      <form class="">
+                        <h1 class="fw-bold mb-0 fs-4">To make your login please select the key-file where your
+                          credentials are</h1>
+                        <br><br>
+                        <label class="btn btn-dark">
+                          Choose File
+                          <input type="file" id="fileInput" hidden>
+                        </label>
+                        <pre id="fileContent"></pre>
+
+                        <small class="text-body-secondary">Don't have an account? Click <a href=""
+                            data-bs-toggle="modal" data-bs-target="#staticBackdrop5">here</a> to register.</small>
+                        <hr class="my-4">
+                      </form>
                     </div>
                   </div>
-                  <div class="col-6">
-                    <div class="social-media-wrapper">
-                      <h4 class="mb-3 h5 text-white">Connect</h4>
-                      <ul class="m-0 list-unstyled d-flex justify-content-start gap-3">
-                        <button type="button" class="btn btn-outline-light" data-bs-toggle="modal"
-                          data-bs-target="#staticBackdrop1" style="width: 50%;">Google Maps
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!------------------------------------------- MODAL PARA REGISTER ------------------------------------------------->
+          <div class="modal fade" id="staticBackdrop5" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog">
+              <div class="modal modal-sheet position-static d-block p-4 py-md-5" tabindex="-1" role="dialog"
+                id="modalSignin">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content rounded-4 shadow" style="background-color: rgb(228, 228, 228);">
+                    <div class="modal-header p-5 pb-4 border-bottom-0">
+                      <h1 class="fw-bold mb-0 fs-2">Sign up for free</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                        fdprocessedid="jpdo3" onclick="redirectToIndex()"></button>
+                    </div>
+
+                    <div class="modal-body p-5 pt-0">
+                      <form class="">
+                        <div class="form-floating mb-3">
+                          <input type="email" class="form-control rounded-3" id="inputUtilizador"
+                            placeholder="name@example.com" fdprocessedid="8zj25x">
+                          <label for="floatingInput">Email address</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                          <input type="password" class="form-control rounded-3" id="inputPasswd" placeholder="Password"
+                            fdprocessedid="zgnsym">
+                          <label for="floatingPassword">Password</label>
+                        </div>
+                        <!-- <button id="signup1" type="button" onclick="fazerReg()">Sign up</button> -->
+                        <button class="btn btn-dark" id="signup1" type="button" onclick="fazerReg()">Sign up</button>
+                        <small class="text-body-secondary">By clicking Sign up, you agree to the terms of use.</small>
+                        <hr class="my-4">
+                        <h2 class="fs-5 fw-bold mb-3">Or use a third-party</h2>
+                        <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit"
+                          fdprocessedid="u3r3v8">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path
+                              d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                          </svg>
+                          Sign up with Instagram
                         </button>
-                        <li>
-                          <a href="https://www.facebook.com/SpiderTattoosPortugal/" target="_blank" class="link-opacity-75 link-opacity-100-hover link-light">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
-                              class="bi bi-facebook" viewBox="0 0 16 16">
-                              <path
-                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
-                            </svg>
-                          </a>
-                        </li>
-                     
-                      
-                        <li>
-                          <a href="https://www.instagram.com/spidertattoosportugal/" target="_blank" class="link-opacity-75 link-opacity-100-hover link-light">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
-                              class="bi bi-instagram" viewBox="0 0 16 16">
-                              <path
-                                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
-                            </svg>
+                        <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit"
+                          fdprocessedid="t1rvu">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path
+                              d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                          </svg>
+                          Sign up with Facebook
+                        </button>
 
-                          </a>
-                        </li>
-                      </ul>
+                      </form>
                     </div>
                   </div>
                 </div>
-              </section>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!--MODAL para GOOGLE MAPS-->
-      <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-        aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-scrollable">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="staticBackdropLabel">How to Get here</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <iframe style="max-width: 500px;"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3004.1306904356356!2d-8.621218388004964!3d41.153499510350024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2465022a48685f%3A0x931fe3612385a95b!2sSPIDER%20TATTOOS!5e0!3m2!1spt-PT!2spt!4v1722180751385!5m2!1spt-PT!2spt"
-                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!------------------------------------------- MODAL PARA GET A TATTOO ------------------------------------------------->
-      <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-      aria-labelledby="staticBackdropLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-scrollable">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="staticBackdropLabel"><b>Fill the form for a tattoo</b></h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <form>
-              <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label"></label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Name">
-              </div>
-              <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label"></label>
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Email">
-              </div>
-              <div class="mb-3"><label class="form-label" for="message"><b>Share your idea</b></label><textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;" data-sb-validations="required"></textarea><div class="invalid-feedback" data-sb-feedback="message:required">Message is required.</div></div>
-              <div class="mb-3">
-                <label for="Default select example" class="form-label"><b>How did you hear about us?</b></label>
-              </div>
-              <div class="mb-3">
-                <select class="form-select" aria-label="Default select example">
-                  <option selected>Select One</option>
-                  <option value="1">Ad</option>
-                  <option value="2">Friend</option>
-                  <option value="3">Social media</option>
-                </select>
-              </div>
-              <div class="mb-3">
-                <label for="exampleFormControlFile1" class="form-label">Upload tattoo idea</label>
-                <input type="file" class="form-control" id="exampleFormControlFile1">
-              </div>
-              <div class="d-grid"><button class="btn btn-dark btn-lg" type="submit">Submit</button></div>
-            </form>
-          </div>
-        </div>
-       </div>
-     </div>
-
-      <!------------------------------------------- MODAL PARA GET A PIERCING ------------------------------------------------->
-      <div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-      aria-labelledby="staticBackdropLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-scrollable">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="staticBackdropLabel"><b>Fill the form for a piercing</b></h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <form>
-              <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label" ></label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Name">
-              </div>
-              <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label"></label>
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Email">
-              </div>
-              <div class="mb-3"><label class="form-label" for="message"><b>Share your idea</b></label><textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;" data-sb-validations="required"></textarea><div class="invalid-feedback" data-sb-feedback="message:required">Message is required.</div></div>
-              <div class="mb-3">
-                <label for="Default select example" class="form-label"><b>How did you hear about us?</b></label>
-              </div>
-              <div class="mb-3">
-                <select class="form-select" aria-label="Default select example">
-                  <option selected>Select One</option>
-                  <option value="1">Ad</option>
-                  <option value="2">Friend</option>
-                  <option value="3">Social media</option>
-                </select>
-              </div>        
-              <div class="d-grid"><button class="btn btn-dark btn-lg" type="submit">Submit</button></div>
-            </form>          
-          </div>
-        </div>
-       </div>
-     </div>
-
-      <!------------------------------------------- MODAL PARA LOGIN ------------------------------------------------->
-      <div class="modal fade" id="staticBackdrop4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-      aria-labelledby="staticBackdropLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog">
-        <div class="modal modal-sheet position-static d-block p-4 py-md-5" tabindex="-1" role="dialog"
-          id="modalSignin">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content rounded-4 shadow" style="background-color: rgb(228, 228, 228);">
-              <div class="modal-header p-5 pb-4 border-bottom-0">
-                <h1 class="fw-bold mb-0 fs-2">Login</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
-                  fdprocessedid="jpdo3" onclick="closeModal('staticBackdrop4')">
-                </button>
-              </div>
-
-              <div class="modal-body p-5 pt-0">
-                <form class="">
-                  <h1 class="fw-bold mb-0 fs-4">To make your login please select the key-file where your credentials are</h1>
-                  <br><br>  
-                  <label class="btn btn-dark">
-                    Choose File
-                    <input type="file" id="fileInput" hidden>
-                </label>
-                    <pre id="fileContent"></pre>
-                  
-                  <small class="text-body-secondary">Don't have an account? Click <a href=""
-                      data-bs-toggle="modal" data-bs-target="#staticBackdrop5">here</a> to register.</small>
-                  <hr class="my-4">
-                </form>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
 
-    <!------------------------------------------- MODAL PARA REGISTER ------------------------------------------------->
-    <div class="modal fade" id="staticBackdrop5" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-      aria-labelledby="staticBackdropLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog">
-        <div class="modal modal-sheet position-static d-block p-4 py-md-5" tabindex="-1" role="dialog"
-          id="modalSignin">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content rounded-4 shadow" style="background-color: rgb(228, 228, 228);">
-              <div class="modal-header p-5 pb-4 border-bottom-0">
-                <h1 class="fw-bold mb-0 fs-2">Sign up for free</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
-                  fdprocessedid="jpdo3" onclick="redirectToIndex()"></button>
-              </div>
-
-              <div class="modal-body p-5 pt-0">
-                <form class="">
-                  <div class="form-floating mb-3">
-                    <input type="email" class="form-control rounded-3" id="inputUtilizador"
-                      placeholder="name@example.com" fdprocessedid="8zj25x">
-                    <label for="floatingInput">Email address</label>
-                  </div>
-                  <div class="form-floating mb-3">
-                    <input type="password" class="form-control rounded-3" id="inputPasswd"
-                      placeholder="Password" fdprocessedid="zgnsym">
-                    <label for="floatingPassword">Password</label>
-                  </div>
-                  <!-- <button id="signup1" type="button" onclick="fazerReg()">Sign up</button> -->
-                  <button class="btn btn-dark" id="signup1" type="button" onclick="fazerReg()">Sign up</button>
-                  <small class="text-body-secondary">By clicking Sign up, you agree to the terms of use.</small>
-                  <hr class="my-4">
-                  <h2 class="fs-5 fw-bold mb-3">Or use a third-party</h2>
-                  <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit"
-                    fdprocessedid="u3r3v8">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                      class="bi bi-instagram" viewBox="0 0 16 16">
-                      <path
-                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
-                    </svg>
-                    Sign up with Instagram
-                  </button>
-                  <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit"
-                    fdprocessedid="t1rvu">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                      class="bi bi-facebook" viewBox="0 0 16 16">
-                      <path
-                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
-                    </svg>
-                    Sign up with Facebook
-                  </button>
-
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-         <!------------------------------------------- MODAL PARA TATTOO ARTIST1 ------------------------------------------------->
-         <div class="modal fade" id="staticBackdrop6" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" style="max-width: 550px;">
-            <div class="modal-content" style=" background-color: aliceblue;
+          <!------------------------------------------- MODAL PARA TATTOO ARTIST1 ------------------------------------------------->
+          <div class="modal fade" id="staticBackdrop6" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" style="max-width: 550px;">
+              <div class="modal-content" style=" background-color: aliceblue;
     background-blend-mode: lighten;">
-              <div class="modal-header">
-                <h5 class="modal-title" id="staticBackdropLabel"><b></b></h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="px-4 pt-5 my-5 text-center border-bottom" >
-                <h1 class="display-4 fw-bold text-body-emphasis">Ink Master</h1>
-                <div class="col-lg-6 mx-auto">
-                  <p class="lead mb-4">"Ink Master", 
-                    is a renowned tattoo artist with over 15 years of experience in the world of body art. His ability to transform ideas into works of art on the skin is unparalleled, he is famous for his detailed, realistic-style tattoos and his masterful use of vibrant colors.</p>
-          
+                <div class="modal-header">
+                  <h5 class="modal-title" id="staticBackdropLabel"><b></b></h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="overflow-hidden" style="max-height: 30vh;">
-                  <div class="container px-5">
-                    <img src="./images/img1.png" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="500" height="500" loading="lazy">
+                <div class="px-4 pt-5 my-5 text-center border-bottom">
+                  <h1 class="display-4 fw-bold text-body-emphasis">Ink Master</h1>
+                  <div class="col-lg-6 mx-auto">
+                    <p class="lead mb-4">"Ink Master",
+                      is a renowned tattoo artist with over 15 years of experience in the world of body art. His ability
+                      to transform ideas into works of art on the skin is unparalleled, he is famous for his detailed,
+                      realistic-style tattoos and his masterful use of vibrant colors.</p>
+
+                  </div>
+                  <div class="overflow-hidden" style="max-height: 30vh;">
+                    <div class="container px-5">
+                      <img src="./images/img1.png" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image"
+                        width="500" height="500" loading="lazy">
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        </div>
-       </div>
-     </div>
+      </div>
+    </div>
+    </div>
 
-      <!------------------------------------------- MODAL PARA TATTOO ARTIST2 ------------------------------------------------->
-      <div class="modal fade" id="staticBackdrop7" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" style="max-width: 650px;">
-          <div class="modal-content" style=" background-color: rgb(240, 248, 255);
+    <!------------------------------------------- MODAL PARA TATTOO ARTIST2 ------------------------------------------------->
+    <div class="modal fade" id="staticBackdrop7" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" style="max-width: 650px;">
+        <div class="modal-content" style=" background-color: rgb(240, 248, 255);
   background-blend-mode: lighten;">
-            <div class="modal-header">
-              <h5 class="modal-title" id="staticBackdropLabel"><b></b></h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel"><b></b></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="px-4 pt-5 my-5 text-center border-bottom">
+            <h1 class="display-4 fw-bold text-body-emphasis">JS</h1>
+            <div class="col-lg-6 mx-auto">
+              <p class="lead mb-4">"JS",
+                began his artistic journey as an illustrator, which honed his talent for creating unique, personalized
+                designs for each client. He is passionate about what he does and believes that each tattoo tells a
+                story, making each project an intimate collaboration with the client. His dedication to perfection and
+                artistic touch ensure that each tattoo is a masterpiece.</p>
+
             </div>
-            <div class="px-4 pt-5 my-5 text-center border-bottom" >
-              <h1 class="display-4 fw-bold text-body-emphasis">JS</h1>
-              <div class="col-lg-6 mx-auto">
-                <p class="lead mb-4">"JS", 
-                  began his artistic journey as an illustrator, which honed his talent for creating unique, personalized designs for each client. He is passionate about what he does and believes that each tattoo tells a story, making each project an intimate collaboration with the client. His dedication to perfection and artistic touch ensure that each tattoo is a masterpiece.</p>
-        
-              </div>
-              <div class="overflow-hidden" style="max-height: 30vh;">
-                <div class="container px-5">
-                  <img src="./images/img2.png" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="500" height="500" loading="lazy">
-                </div>
+            <div class="overflow-hidden" style="max-height: 30vh;">
+              <div class="container px-5">
+                <img src="./images/img2.png" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image"
+                  width="500" height="500" loading="lazy">
               </div>
             </div>
           </div>
         </div>
       </div>
-      </div>
-     </div>
-   </div>
+    </div>
+    </div>
+    </div>
+    </div>
 
-     <!------------------------------------------- MODAL PARA TATTOO ARTIST3 ------------------------------------------------->
-     <div class="modal fade" id="staticBackdrop8" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <!------------------------------------------- MODAL PARA TATTOO ARTIST3 ------------------------------------------------->
+    <div class="modal fade" id="staticBackdrop8" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" style="max-width: 650px;">
         <div class="modal-content" style=" background-color: rgb(240, 248, 255);
 background-blend-mode: lighten;">
@@ -652,16 +689,20 @@ background-blend-mode: lighten;">
             <h5 class="modal-title" id="staticBackdropLabel"><b></b></h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-          <div class="px-4 pt-5 my-5 text-center border-bottom" >
+          <div class="px-4 pt-5 my-5 text-center border-bottom">
             <h1 class="display-4 fw-bold text-body-emphasis">Ink Alchemist</h1>
             <div class="col-lg-6 mx-auto">
-              <p class="lead mb-4">"Ink Alchemist", 
-                has been transforming skin into living canvases for over a decade. Her journey began in a small town, where she was fascinated by the stories and cultures behind every tattoo. Her signature style blends intricate line work with vibrant watercolor techniques, creating pieces that are both visually striking and deeply personal. </p>
-      
+              <p class="lead mb-4">"Ink Alchemist",
+                has been transforming skin into living canvases for over a decade. Her journey began in a small town,
+                where she was fascinated by the stories and cultures behind every tattoo. Her signature style blends
+                intricate line work with vibrant watercolor techniques, creating pieces that are both visually striking
+                and deeply personal. </p>
+
             </div>
             <div class="overflow-hidden" style="max-height: 30vh;">
               <div class="container px-5">
-                <img src="./images/img3.png" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="500" height="500" loading="lazy">
+                <img src="./images/img3.png" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image"
+                  width="500" height="500" loading="lazy">
               </div>
             </div>
           </div>
@@ -669,300 +710,309 @@ background-blend-mode: lighten;">
       </div>
     </div>
     </div>
-   </div>
- </div>
- <!-------------------------------------------- MODAL PARA A LOJA ------------------------------------------>
- 
- <div class="modal fade" id="staticBackdrop10" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-            aria-labelledby="staticBackdropLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-scrollable modal-lg">
-      
-              <div class="modal modal-sheet position-static d-block p-4 py-md-5 modal-xl" tabindex="-1" role="dialog"
-                id="modalSignin">
-                <div class="modal-dialog modal-xl" role="document">
- 
-                  <div class="modal-content rounded-4 shadow" style="background-color: rgb(228, 228, 228);">
-                    <div class="container p-4 pb-5 mb-2 ">
-                    <div class="modal-header p-5 pb-4 border-bottom-0 ">
-                     
-                      <h1 class=" fw-bold mb-0 fs-2">Tattoo shop</h1>
-                     
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
-                        fdprocessedid="jpdo3" onclick="closeModal('staticBackdrop10')">
-                      </button>
-                    </div>
-                    <p class="fw-bold" style="margin-left:20px">Welcome, <span id="idUtilizador1"></span></p>
-                    
-                    
-                    <h5 class="mb-3"><a href="#!" class="text-body"><i style="font-size:15px" class="fas fa-long-arrow-alt-left me-2" aria-hidden="true" onclick="closeModal('staticBackdrop10')"> Back to homepage</i></a></h5>
-                    <hr>
- 
-                    <div class="d-flex justify-content-between align-items-center mb-4">
-                        <div>
-                            <p class="mb-1">Shopping cart</p>
-                        </div>
-                      
-                    </div>
- 
-                    <div class="card mb-3">
-                        <div class="card-body">
-                            <div class="d-flex justify-content-between">
-                                <div class="d-flex flex-row align-items-center">
-                                    <div>
-                                        <img src="./images/tattooProdutos/img10.jpg" class="img-fluid rounded-3" alt="Shopping item" style="width: 65px;">
-                                    </div>
-                                    <div class="ms-3">
-                                        <h5>Headlight</h5>
-                                        <p class="small mb-0">Mercedes T2</p>
-                                    </div>
-                                </div>
-                                <div class="d-flex flex-row align-items-center">
-                                    <div style="width: 50px;">
-                                        <h5 class="fw-normal mb-0">2</h5>
-                                    </div>
-                                    <div style="width: 80px;">
-                                        <h5 class="mb-0">$200</h5>
-                                    </div>
-                                    <a href="#!" style="color: #cecece;"><input class="allchecks" type="checkbox"></input></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
- 
-                    <div class="card mb-3">
-                        <div class="card-body">
-                            <div class="d-flex justify-content-between">
-                                <div class="d-flex flex-row align-items-center">
-                                    <div>
-                                        <img src="./images/tattooProdutos/img3.jfif" class="img-fluid rounded-3" alt="Shopping item" style="width: 65px;">
-                                    </div>
-                                    <div class="ms-3">
-                                        <h5>Alternator</h5>
-                                        <p class="small mb-0">Mercedes T2</p>
-                                    </div>
-                                </div>
-                                <div class="d-flex flex-row align-items-center">
-                                    <div style="width: 50px;">
-                                        <h5 class="fw-normal mb-0">1</h5>
-                                    </div>
-                                    <div style="width: 80px;">
-                                        <h5 class="mb-0">$150</h5>
-                                    </div>
-                                    <a href="#!" style="color: #cecece;"><input class="allchecks" type="checkbox"></input></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
- 
-                    <div class="card mb-3">
-                        <div class="card-body">
-                            <div class="d-flex justify-content-between">
-                                <div class="d-flex flex-row align-items-center">
-                                    <div>
-                                        <img src="./images/tattooProdutos/Img.jfif" class="img-fluid rounded-3" alt="Shopping item" style="width: 65px;">
-                                    </div>
-                                    <div class="ms-3">
-                                        <h5>Gasket Set</h5>
-                                        <p class="small mb-0">Mercedes T2</p>
-                                    </div>
-                                </div>
-                                <div class="d-flex flex-row align-items-center">
-                                    <div style="width: 50px;">
-                                        <h5 class="fw-normal mb-0">1</h5>
-                                    </div>
-                                    <div style="width: 80px;">
-                                        <h5 class="mb-0">$150</h5>
-                                    </div>
-                                    <a href="#!" style="color: #cecece;"><input class="allchecks" type="checkbox"></input></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
- 
-                    <div class="card mb-3">
-                        <div class="card-body">
-                            <div class="d-flex justify-content-between">
-                                <div class="d-flex flex-row align-items-center">
-                                    <div>
-                                        <img src="./images/tattooProdutos/image7.jfif" class="img-fluid rounded-3" alt="Shopping item" style="width: 65px;">
-                                    </div>
-                                    <div class="ms-3">
-                                        <h5>Breaking Liquid</h5>
-                                        <p class="small mb-0">DOT4</p>
-                                    </div>
-                                </div>
-                                <div class="d-flex flex-row align-items-center">
-                                    <div style="width: 50px;">
-                                        <h5 class="fw-normal mb-0">1</h5>
-                                    </div>
-                                    <div style="width: 80px;">
-                                        <h5 class="mb-0">$5</h5>
-                                    </div>
-                                    <a href="#!" style="color: #cecece;"><input class="allchecks" type="checkbox"></input></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
- 
-                    <div class="card mb-3">
-                      <div class="card-body">
-                          <div class="d-flex justify-content-between">
-                              <div class="d-flex flex-row align-items-center">
-                                  <div>
-                                      <img src="./images/tattooProdutos/img6.jfif" class="img-fluid rounded-3" alt="Shopping item" style="width: 65px;">
-                                  </div>
-                                  <div class="ms-3">
-                                      <h5>Gasket Set</h5>
-                                      <p class="small mb-0">Mercedes T2</p>
-                                  </div>
-                              </div>
-                              <div class="d-flex flex-row align-items-center">
-                                  <div style="width: 50px;">
-                                      <h5 class="fw-normal mb-0">1</h5>
-                                  </div>
-                                  <div style="width: 80px;">
-                                      <h5 class="mb-0">$150</h5>
-                                  </div>
-                                  <a href="#!" style="color: #cecece;"><input class="allchecks" type="checkbox"></input></a>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
- 
-                  <div class="card mb-3">
-                    <div class="card-body">
-                        <div class="d-flex justify-content-between">
-                            <div class="d-flex flex-row align-items-center">
-                                <div>
-                                    <img src="./images/tattooProdutos/img8.jpg" class="img-fluid rounded-3" alt="Shopping item" style="width: 65px;">
-                                </div>
-                                <div class="ms-3">
-                                    <h5>Gasket Set</h5>
-                                    <p class="small mb-0">Mercedes T2</p>
-                                </div>
-                            </div>
-                            <div class="d-flex flex-row align-items-center">
-                                <div style="width: 50px;">
-                                    <h5 class="fw-normal mb-0">1</h5>
-                                </div>
-                                <div style="width: 80px;">
-                                    <h5 class="mb-0">$150</h5>
-                                </div>
-                                <a href="#!" style="color: #cecece;"><input class="allchecks" type="checkbox"></input></a>
-                            </div>
-                        </div>
-                    </div>
+    </div>
+    </div>
+    <!-------------------------------------------- MODAL PARA A LOJA ------------------------------------------>
+
+    <div class="modal fade" id="staticBackdrop10" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-lg">
+
+        <div class="modal modal-sheet position-static d-block p-4 py-md-5 modal-xl" tabindex="-1" role="dialog"
+          id="modalSignin">
+          <div class="modal-dialog modal-xl" role="document">
+
+            <div class="modal-content rounded-4 shadow" style="background-color: rgb(228, 228, 228);">
+              <div class="container p-4 pb-5 mb-2 ">
+                <div class="modal-header p-5 pb-4 border-bottom-0 ">
+
+                  <h1 class=" fw-bold mb-0 fs-2">Tattoo shop</h1>
+
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                    fdprocessedid="jpdo3" onclick="closeModal('staticBackdrop10')">
+                  </button>
                 </div>
- 
+                <p class="fw-bold" style="margin-left:20px">Welcome, <span id="idUtilizador1"></span></p>
+
+
+                <h5 class="mb-3"><a href="#!" class="text-body"><i style="font-size:15px"
+                      class="fas fa-long-arrow-alt-left me-2" aria-hidden="true"
+                      onclick="closeModal('staticBackdrop10')"> Back to homepage</i></a></h5>
+                <hr>
+
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                  <div>
+                    <p class="mb-1">Shopping cart</p>
+                  </div>
+
+                </div>
+
                 <div class="card mb-3">
                   <div class="card-body">
-                      <div class="d-flex justify-content-between">
-                          <div class="d-flex flex-row align-items-center">
-                              <div>
-                                  <img src="./images/tattooProdutos/img9.jfif" class="img-fluid rounded-3" alt="Shopping item" style="width: 65px;">
-                              </div>
-                              <div class="ms-3">
-                                  <h5>Gasket Set</h5>
-                                  <p class="small mb-0">Mercedes T2</p>
-                              </div>
-                          </div>
-                          <div class="d-flex flex-row align-items-center">
-                              <div style="width: 50px;">
-                                  <h5 class="fw-normal mb-0">1</h5>
-                              </div>
-                              <div style="width: 80px;">
-                                  <h5 class="mb-0">$150</h5>
-                              </div>
-                              <a href="#!" style="color: #cecece;"><input class="allchecks" type="checkbox"></input></a>
-                          </div>
+                    <div class="d-flex justify-content-between">
+                      <div class="d-flex flex-row align-items-center">
+                        <div>
+                          <img src="./images/tattooProdutos/img10.jpg" class="img-fluid rounded-3" alt="Shopping item"
+                            style="width: 65px;">
+                        </div>
+                        <div class="ms-3">
+                          <h5>Package sabão antissético</h5>
+                          <p class="small mb-0"></p>
+                        </div>
                       </div>
-                  </div>
-              </div>
-              <div class="text-center">
-                  <button class="btn btn-dark btn-lg" id="signup1" type="button" onclick="checkIfChecked()" >Buy the Items</button>
-              </div>
-                  
- 
-                
+                      <div class="d-flex flex-row align-items-center">
+                        <div style="width: 50px;">
+                          <h5 class="fw-normal mb-0"></h5>
+                        </div>
+                        <div style="width: 80px;">
+                          <h5 class="mb-0">$15</h5>
+                        </div>
+                        <a href="#!" style="color: #cecece;"><input class="allchecks" type="checkbox"></input></a>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </div>
-            </div>
-          </div>
-          
-          <!-------------------------------- MODAL PARA CONTACTOS -------------------------------------->
-          <div class="modal fade" id="staticBackdrop11" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-          <div class="modal modal-sheet position-static d-block p-4 py-md-5" tabindex="-1" role="dialog" id="modalSignin" style="margin-top: 200px;">
-            
-            <div class="modal-dialog" role="document">
-              <div class="modal-content rounded-4 shadow" style="background-color: rgb(228, 228, 228); ">
-                <div class="modal-header p-5 pb-4 border-bottom-0" >
-                  
-                  <form style="width: 36rem;">
-                    
-                    <!-- Name input -->
-                     
-                    <div data-mdb-input-init class="form-outline mb-4">
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
-                      fdprocessedid="jpdo3" onclick="closeModal('staticBackdrop11')" style="margin-left: 370px;">
-                    </button>
-                      <h1 class="fw-bold mb-4 fs-2 text-center">Contact us</h1>
-                      <p class="fw-bold" style="margin-left:20px">Welcome, <span id="idUtilizador2"></span></p>
-                     
-                      
-                      <input type="text" id="form4Example1" class="form-control" placeholder="Name" />
+
+                <div class="card mb-3">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div class="d-flex flex-row align-items-center">
+                        <div>
+                          <img src="./images/tattooProdutos/img3.jfif" class="img-fluid rounded-3" alt="Shopping item"
+                            style="width: 65px;">
+                        </div>
+                        <div class="ms-3">
+
+                          <h5>Package Luvas</h5>
+                          <p class="small mb-0"></p>
+                        </div>
+                      </div>
+                      <div class="d-flex flex-row align-items-center">
+                        <div style="width: 50px;">
+                          <h5 class="fw-normal mb-0"></h5>
+                        </div>
+                        <div style="width: 80px;">
+                          <h5 class="mb-0">$15</h5>
+                        </div>
+                        <a href="#!" style="color: #cecece;"><input class="allchecks" type="checkbox"></input></a>
+                      </div>
                     </div>
-                  
-                    <!-- Email input -->
-                    <div data-mdb-input-init class="form-outline mb-4">
-                      <input type="email" id="form4Example2" class="form-control" placeholder="Email address"/>
-                      <label class="form-label" for="form4Example2"></label>
-                    </div>
-                  
-                    <!-- Message input -->
-                    <div data-mdb-input-init class="form-outline mb-4">
-                      <textarea class="form-control" id="form4Example3" rows="7" placeholder="Message"></textarea>
-                    
-                    </div>
-                  
-                    <!-- Checkbox -->
-                    <div class="form-check d-flex justify-content-center mb-4">
-                      <input
-                        class="form-check-input me-2"
-                        type="checkbox"
-                        value=""
-                        id="form4Example4"
-                       
-                      />
-                      <label class="form-check-label" for="form4Example4">
-                        Send me a copy of this message
-                      </label>
-                    </div>
-                  
-                    <!-- Submit button -->
-                     <div class="text-center">
-                      <button data-mdb-ripple-init type="button" class="btn btn-dark btn-block mb-4" style="width: 80px">Send</button>
-                     </div>
-                  
-                  </form>
+                  </div>
                 </div>
+
+                <div class="card mb-3">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div class="d-flex flex-row align-items-center">
+                        <div>
+                          <img src="./images/tattooProdutos/Img.jfif" class="img-fluid rounded-3" alt="Shopping item"
+                            style="width: 65px;">
+                        </div>
+                        <div class="ms-3">
+                          <h5>Package Agulhas</h5>
+                          <p class="small mb-0"></p>
+                        </div>
+                      </div>
+                      <div class="d-flex flex-row align-items-center">
+                        <div style="width: 50px;">
+                          <h5 class="fw-normal mb-0"></h5>
+                        </div>
+                        <div style="width: 80px;">
+                          <h5 class="mb-0">$15</h5>
+                        </div>
+                        <a href="#!" style="color: #cecece;"><input class="allchecks" type="checkbox"></input></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card mb-3">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div class="d-flex flex-row align-items-center">
+                        <div>
+                          <img src="./images/tattooProdutos/image7.jfif" class="img-fluid rounded-3" alt="Shopping item"
+                            style="width: 65px;">
+                        </div>
+                        <div class="ms-3">
+                          <h5>Package Brinco</h5>
+                          <p class="small mb-0"></p>
+                        </div>
+                      </div>
+                      <div class="d-flex flex-row align-items-center">
+                        <div style="width: 50px;">
+                          <h5 class="fw-normal mb-0"></h5>
+                        </div>
+                        <div style="width: 80px;">
+                          <h5 class="mb-0">$15</h5>
+                        </div>
+                        <a href="#!" style="color: #cecece;"><input class="allchecks" type="checkbox"></input></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card mb-3">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div class="d-flex flex-row align-items-center">
+                        <div>
+                          <img src="./images/tattooProdutos/img6.jfif" class="img-fluid rounded-3" alt="Shopping item"
+                            style="width: 65px;">
+                        </div>
+                        <div class="ms-3">
+                          <h5>Package Piercing</h5>
+                          <p class="small mb-0"></p>
+                        </div>
+                      </div>
+                      <div class="d-flex flex-row align-items-center">
+                        <div style="width: 50px;">
+                          <h5 class="fw-normal mb-0"></h5>
+                        </div>
+                        <div style="width: 80px;">
+                          <h5 class="mb-0">$15</h5>
+                        </div>
+                        <a href="#!" style="color: #cecece;"><input class="allchecks" type="checkbox"></input></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card mb-3">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div class="d-flex flex-row align-items-center">
+                        <div>
+                          <img src="./images/tattooProdutos/img8.jpg" class="img-fluid rounded-3" alt="Shopping item"
+                            style="width: 65px;">
+                        </div>
+                        <div class="ms-3">
+                          <h5>Package Anéis de Lingua</h5>
+                          <p class="small mb-0"></p>
+                        </div>
+                      </div>
+                      <div class="d-flex flex-row align-items-center">
+                        <div style="width: 50px;">
+                          <h5 class="fw-normal mb-0"></h5>
+                        </div>
+                        <div style="width: 80px;">
+                          <h5 class="mb-0">$15</h5>
+                        </div>
+                        <a href="#!" style="color: #cecece;"><input class="allchecks" type="checkbox"></input></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card mb-3">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div class="d-flex flex-row align-items-center">
+                        <div>
+                          <img src="./images/tattooProdutos/img9.jfif" class="img-fluid rounded-3" alt="Shopping item"
+                            style="width: 65px;">
+                        </div>
+                        <div class="ms-3">
+                          <h5>Piercing Titanium</h5>
+                          <p class="small mb-0"></p>
+                        </div>
+                      </div>
+                      <div class="d-flex flex-row align-items-center">
+                        <div style="width: 50px;">
+                          <h5 class="fw-normal mb-0"></h5>
+                        </div>
+                        <div style="width: 80px;">
+                          <h5 class="mb-0">$15</h5>
+                        </div>
+                        <a href="#!" style="color: #cecece;"><input class="allchecks" type="checkbox"></input></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="text-center">
+                  <button class="btn btn-dark btn-lg" id="signup1" type="button" onclick="checkIfChecked()">Buy the
+                    Items</button>
+                </div>
+
+
+
               </div>
             </div>
           </div>
         </div>
-     <!------------------------------------------------- DIVISÃO PARA MODALS --------------------------------------------------------->
       </div>
+    </div>
 
-      
+    <!-------------------------------- MODAL PARA CONTACTOS -------------------------------------->
+    <div class="modal fade" id="staticBackdrop11" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal modal-sheet position-static d-block p-4 py-md-5" tabindex="-1" role="dialog" id="modalSignin"
+        style="margin-top: 200px;">
+
+        <div class="modal-dialog" role="document">
+          <div class="modal-content rounded-4 shadow" style="background-color: rgb(228, 228, 228); ">
+            <div class="modal-header p-5 pb-4 border-bottom-0">
+
+              <form style="width: 36rem;">
+
+                <!-- Name input -->
+
+                <div data-mdb-input-init class="form-outline mb-4">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                    fdprocessedid="jpdo3" onclick="closeModal('staticBackdrop11')" style="margin-left: 370px;">
+                  </button>
+                  <h1 class="fw-bold mb-4 fs-2 text-center">Contact us</h1>
+                  <p class="fw-bold" style="margin-left:20px">Welcome, <span id="idUtilizador2"></span></p>
+
+
+                  <input type="text" id="form4Example1" class="form-control" placeholder="Name" />
+                </div>
+
+                <!-- Email input -->
+                <div data-mdb-input-init class="form-outline mb-4">
+                  <input type="email" id="form4Example2" class="form-control" placeholder="Email address" />
+                  <label class="form-label" for="form4Example2"></label>
+                </div>
+
+                <!-- Message input -->
+                <div data-mdb-input-init class="form-outline mb-4">
+                  <textarea class="form-control" id="form4Example3" rows="7" placeholder="Message"></textarea>
+
+                </div>
+
+                <!-- Checkbox -->
+                <div class="form-check d-flex justify-content-center mb-4">
+                  <input class="form-check-input me-2" type="checkbox" value="" id="form4Example4" />
+                  <label class="form-check-label" for="form4Example4">
+                    Send me a copy of this message
+                  </label>
+                </div>
+
+                <!-- Submit button -->
+                <div class="text-center">
+                  <button data-mdb-ripple-init type="button" class="btn btn-dark btn-block mb-4"
+                    style="width: 80px">Send</button>
+                </div>
+
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!------------------------------------------------- DIVISÃO PARA MODALS --------------------------------------------------------->
+    </div>
+
+
     </footer>
-    
+
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"
       integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"></script>
+
     <body>
-</body>
+    </body>
 
 </html>
