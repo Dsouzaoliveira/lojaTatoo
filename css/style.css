@@ -14,6 +14,7 @@
   -webkit-text-fill-color: coral;
 }
 
+
 .navbar-brand {
   letter-spacing: 3px;
   font-size: 2rem;
@@ -196,7 +197,7 @@ h4 {
   right: 0;
   bottom: 0;
   background-color: black;
-  opacity: 0.6;
+  opacity: 0.7;
   background-image: url(../projetoTattoo/images/backnewspiderlogo3.png);
   z-index: 1;
 
@@ -229,4 +230,77 @@ h4 {
 @media (min-width: 1600px){
   .container-custom {width: 1520px;}
 }
+
+.hero__scroll-btn{
+  position: absolute;
+  left: 50%;
+  bottom: 30px;
+  transform: translateX(-50%);
+  z-index: 1;
+  color: var(--bs-light);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+}
+
+.hero__scroll-btn:hover{
+  color: var(--bs-light);
+  opacity: 0.7;
+}
+
+.hero__scroll-btn .bi {
+  transition-delay: 0.8s;
+  animation: bounce 1s infinite alternate;
+}
+
+@keyframes bounce {
+  from{
+    transform: translateY(0px);
+  }
+  to{
+    transform: translateY(-10px);
+  }
+}
+
+html {scroll-behavior: smooth;}
+
+.steps{
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.steps__section-thumbnail{
+  height: 240px;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+@media (min-width: 544px){
+  .steps{
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .steps__section-thumbnail{
+    height: auto;
+  }
+}
+
+.steps__content-width{
+  max-width: 456px;
+  margin: 0 auto;
+}
+
+.steps--background{
+  background-color: rgba(68, 68, 68, 0.147);
+}
+
+.modal-open .modal::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+
 
