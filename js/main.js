@@ -61,6 +61,8 @@ function redirectToIndex(){
       document.documentElement.scrollTop = 0;
   }
 
+
+  //Ver produtos selecionados na checkbox
   function checkIfChecked() {
     var checkboxes = document.querySelectorAll('.allchecks');
     var isChecked = false;
@@ -103,6 +105,8 @@ function redirectToIndex(){
     }
   });
    
+
+  //Função para fechar o modal
   function closeModal(modalFechar) {
     // Get the modal element by its ID
     const modalElement = document.getElementById(modalFechar);
@@ -114,6 +118,8 @@ function redirectToIndex(){
     modal.hide();
   }
    
+
+  // Função para fazer registo sem base de dados, apenas JS
   function fazerReg() {
     const inputUser = document.getElementById('inputUtilizador');
     let inputUsVal = inputUser.value;
@@ -134,7 +140,7 @@ function redirectToIndex(){
   
 
 
-
+// Função para receber o username do modal
       $('#staticBackdrop10').on('shown.bs.modal', function () {
         // Code to be executed when the modal is opened
        console.log('Modal opened');
