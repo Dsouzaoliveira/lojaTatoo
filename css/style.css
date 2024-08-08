@@ -296,7 +296,9 @@ html {scroll-behavior: smooth;}
   background-color: rgba(68, 68, 68, 0.147);
 }
 
-
+.modal-open .modal::-webkit-scrollbar {
+  display: none;
+}
 
 
 
