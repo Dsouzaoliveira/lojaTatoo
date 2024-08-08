@@ -58,7 +58,7 @@
           <ul class="navbar-nav d-flex flex-row ml-auto" style="margin-left: 40px">
             <li class="nav-item me-3 me-lg-0">
               <a class="nav-link" href="">
-                <span style="color:rgb(174, 174, 174); font-size:12px">0€</span>
+                <span style="color:rgb(174, 174, 174); font-size:12px" id="totalCompras">0€</span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16" style="margin-bottom: 5px; color:grey">
                   <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
                 </svg>
@@ -674,35 +674,33 @@ background-blend-mode: lighten;">
  <!-------------------------------------------- MODAL PARA A LOJA ------------------------------------------>
  <div class="modal fade" id="staticBackdrop10" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
             aria-labelledby="staticBackdropLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-scrollable modal-xl">
+            <div class="modal-dialog modal-dialog-scrollable modal-lg">
       
               <div class="modal modal-sheet position-static d-block p-4 py-md-5 modal-xl" tabindex="-1" role="dialog"
                 id="modalSignin">
                 <div class="modal-dialog modal-xl" role="document">
  
                   <div class="modal-content rounded-4 shadow" style="background-color: rgb(228, 228, 228);">
-                    <div class="container p-4 pb-5 mb-2">
-                    <div class="modal-header p-5 pb-4 border-bottom-0">
-                      
-                      <h1 class="fw-bold mb-0 fs-2">Login</h1>
+                    <div class="container p-4 pb-5 mb-2 ">
+                    <div class="modal-header p-5 pb-4 border-bottom-0 ">
+                     
+                      <h1 class=" fw-bold mb-0 fs-2">Tattoo shop</h1>
+                     
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
                         fdprocessedid="jpdo3" onclick="closeModal('staticBackdrop10')">
                       </button>
                     </div>
- 
+                    <p class="fw-bold" style="margin-left:20px">Welcome, <span id="idUtilizador1"></span></p>
                     
-                    <h5 class="mb-3"><a href="#!" class="text-body"><i class="fas fa-long-arrow-alt-left me-2" aria-hidden="true"></i>Continue shopping</a></h5>
+                    
+                    <h5 class="mb-3"><a href="#!" class="text-body"><i style="font-size:15px" class="fas fa-long-arrow-alt-left me-2" aria-hidden="true" onclick="closeModal('staticBackdrop10')"> Back to homepage</i></a></h5>
                     <hr>
  
                     <div class="d-flex justify-content-between align-items-center mb-4">
                         <div>
                             <p class="mb-1">Shopping cart</p>
-                            <p class="mb-0">You have 4 items in your cart</p>
                         </div>
-                        <div>
-                            <p class="mb-0"><span class="text-muted">Sort by:</span> <a href="#!" class="text-body">price <i class="fas fa-angle-down mt-1" aria-hidden="true"></i></a>
-                            </p>
-                        </div>
+                      
                     </div>
  
                     <div class="card mb-3">
@@ -879,7 +877,10 @@ background-blend-mode: lighten;">
                       </div>
                   </div>
               </div>
-                    <button id="signup1" type="button" onclick="checkIfChecked()">Buy the Items</button>
+              <div class="text-center">
+                  <button class="btn btn-dark btn-lg" id="signup1" type="button" onclick="checkIfChecked()" >Buy the Items</button>
+              </div>
+                  
  
                 
                   </div>
@@ -888,13 +889,13 @@ background-blend-mode: lighten;">
             </div>
             </div>
           </div>
-
+          
      <!------------------------------------------------- DIVISÃO PARA MODALS --------------------------------------------------------->
       </div>
 
       
     </footer>
-
+    
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"
       integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

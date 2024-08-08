@@ -61,15 +61,18 @@ function redirectToIndex(){
       document.documentElement.scrollTop = 0;
   }
 
-  // Funções para login e register
-
   function checkIfChecked() {
     var checkboxes = document.querySelectorAll('.allchecks');
     var isChecked = false;
+    var j = 0;
     for (var i = 0; i < checkboxes.length; i++) {
       if (checkboxes[i].checked) {
+        j += 1
         isChecked = true;
-        console.log('Hey it is'+i);
+        //console.log('Hey it is'+i);
+        const total = j * 15;
+        document.getElementById('totalCompras').innerHTML = total + "€" ;
+        closeModal('staticBackdrop10')
       }
     }
     return isChecked;
@@ -129,4 +132,13 @@ function redirectToIndex(){
     closeModal('staticBackdrop5');
   }
   
-  
+
+
+
+      $('#staticBackdrop10').on('shown.bs.modal', function () {
+        // Code to be executed when the modal is opened
+       console.log('Modal opened');
+       const temp = document.getElementById('idUtilizador').innerHTML 
+       
+       document.getElementById('idUtilizador1').innerHTML = temp;
+      })
