@@ -46,7 +46,7 @@
               <a id="butao" class="nav-link" href="#aboutus">About</a>
             </li>
             <li class="nav-item" style=" font-size: 1rem;">
-              <a id="butao" class="nav-link" href="contatos.html">Contact</a>
+              <a id="butao" class="nav-link" href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop11">Contact</a>
             </li>
             <li class="nav-item" style=" font-size: 1rem;">
               <a id="butao" class="nav-link" href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop10">Store</a>
@@ -290,7 +290,7 @@
                 <h4 style="color: rgb(255, 255, 255);">Looking for quality tattoos and piercing services?</h4>
               </div>
               <div class="col-md-5 col-lg-4 col-xl-3 pt-4 pt-md-0">
-                <a href="contatos.html" class="btn btn-outline-light btn-lg">Contact Us Today</a>
+                <a href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop11" class="btn btn-outline-light btn-lg">Contact Us Today</a>
               </div>
             </div>
           </div>
@@ -502,7 +502,7 @@
               <div class="modal-header p-5 pb-4 border-bottom-0">
                 <h1 class="fw-bold mb-0 fs-2">Login</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
-                  fdprocessedid="jpdo3" onclick="redirectToIndex()">
+                  fdprocessedid="jpdo3" onclick="closeModal('staticBackdrop4')">
                 </button>
               </div>
 
@@ -672,6 +672,7 @@ background-blend-mode: lighten;">
    </div>
  </div>
  <!-------------------------------------------- MODAL PARA A LOJA ------------------------------------------>
+ 
  <div class="modal fade" id="staticBackdrop10" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
             aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-scrollable modal-lg">
@@ -890,6 +891,66 @@ background-blend-mode: lighten;">
             </div>
           </div>
           
+          <!-------------------------------- MODAL PARA CONTACTOS -------------------------------------->
+          <div class="modal fade" id="staticBackdrop11" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal modal-sheet position-static d-block p-4 py-md-5" tabindex="-1" role="dialog" id="modalSignin" style="margin-top: 200px;">
+            
+            <div class="modal-dialog" role="document">
+              <div class="modal-content rounded-4 shadow" style="background-color: rgb(228, 228, 228); ">
+                <div class="modal-header p-5 pb-4 border-bottom-0" >
+                  
+                  <form style="width: 36rem;">
+                    
+                    <!-- Name input -->
+                     
+                    <div data-mdb-input-init class="form-outline mb-4">
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                      fdprocessedid="jpdo3" onclick="closeModal('staticBackdrop11')" style="margin-left: 370px;">
+                    </button>
+                      <h1 class="fw-bold mb-4 fs-2 text-center">Contact us</h1>
+                      <p class="fw-bold" style="margin-left:20px">Welcome, <span id="idUtilizador2"></span></p>
+                     
+                      
+                      <input type="text" id="form4Example1" class="form-control" placeholder="Name" />
+                    </div>
+                  
+                    <!-- Email input -->
+                    <div data-mdb-input-init class="form-outline mb-4">
+                      <input type="email" id="form4Example2" class="form-control" placeholder="Email address"/>
+                      <label class="form-label" for="form4Example2"></label>
+                    </div>
+                  
+                    <!-- Message input -->
+                    <div data-mdb-input-init class="form-outline mb-4">
+                      <textarea class="form-control" id="form4Example3" rows="7" placeholder="Message"></textarea>
+                    
+                    </div>
+                  
+                    <!-- Checkbox -->
+                    <div class="form-check d-flex justify-content-center mb-4">
+                      <input
+                        class="form-check-input me-2"
+                        type="checkbox"
+                        value=""
+                        id="form4Example4"
+                       
+                      />
+                      <label class="form-check-label" for="form4Example4">
+                        Send me a copy of this message
+                      </label>
+                    </div>
+                  
+                    <!-- Submit button -->
+                     <div class="text-center">
+                      <button data-mdb-ripple-init type="button" class="btn btn-dark btn-block mb-4" style="width: 80px">Send</button>
+                     </div>
+                  
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
      <!------------------------------------------------- DIVISÃO PARA MODALS --------------------------------------------------------->
       </div>
 

@@ -148,3 +148,14 @@ function redirectToIndex(){
        
        document.getElementById('idUtilizador1').innerHTML = temp;
       })
+
+
+
+// Função para receber o username do modal
+$('#staticBackdrop11').on('shown.bs.modal', function () {
+  // Code to be executed when the modal is opened
+ console.log('Modal opened');
+ const temp = document.getElementById('idUtilizador').innerHTML 
+ 
+ document.getElementById('idUtilizador2').innerHTML = temp;
+})
