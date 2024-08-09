@@ -57,7 +57,7 @@
           </ul>
           <ul class="navbar-nav d-flex flex-row ml-auto" style="margin-left: 40px">
             <li class="nav-item me-3 me-lg-0">
-              <a class="nav-link" href="">
+              <a data-bs-toggle="modal" data-bs-target="#staticBackdrop12" class="nav-link" href="">
                 <span style="color:rgb(174, 174, 174); font-size:12px" id="totalCompras">0€</span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16" style="margin-bottom: 5px; color:grey">
                   <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
@@ -554,7 +554,7 @@
                     <label for="floatingPassword">Password</label>
                   </div>
                   <!-- <button id="signup1" type="button" onclick="fazerReg()">Sign up</button> -->
-                  <button class="btn btn-dark" id="signup1" type="button" onclick="fazerReg()">Sign up</button>
+                  <button class="btn btn-dark w-100" id="signup1" type="button" onclick="fazerReg()">Sign up</button>
                   <small class="text-body-secondary">By clicking Sign up, you agree to the terms of use.</small>
                   <hr class="my-4">
                   <h2 class="fs-5 fw-bold mb-3">Or use a third-party</h2>
@@ -691,7 +691,7 @@ background-blend-mode: lighten;">
                         fdprocessedid="jpdo3" onclick="closeModal('staticBackdrop10')">
                       </button>
                     </div>
-                    <p class="fw-bold" style="margin-left:20px">Feel free to message us, <span id="idUtilizador1"></span>.</p>
+                    <p class="fw" style="margin-left:20px">Welcome to our store, <span id="idUtilizador1"></span>.</p>
                     
                     
                     <h5 class="mb-3"><a href="#!" class="text-body"><i style="font-size:15px" class="fas fa-long-arrow-alt-left me-2" aria-hidden="true" onclick="closeModal('staticBackdrop10')"> Back to homepage</i></a></h5>
@@ -887,7 +887,9 @@ background-blend-mode: lighten;">
                               </div>
                             </div>
               <div class="text-center">
-                  <button class="btn btn-dark btn-lg" id="signup1" type="button" onclick="checkIfChecked()" >Buy the Items</button>
+                  <button class="btn btn-dark btn-lg" id="signup1" type="button" onclick="checkIfChecked()">Add to cart &nbsp<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16" style="margin-bottom: 5px; color:rgb(255, 255, 255)">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                  </svg></button>
               </div>
                   
  
@@ -916,7 +918,7 @@ background-blend-mode: lighten;">
                       fdprocessedid="jpdo3" onclick="closeModal('staticBackdrop11')" style="margin-left: 370px;">
                     </button>
                       <h1 class="fw-bold mb-4 fs-2 text-center">Contact us</h1>
-                      <p class="fw-bold" style="margin-left:20px">Welcome, <span id="idUtilizador2"></span></p>
+                      <p class="fw" >Please message us, <span id="idUtilizador2"></span>.</p>
                      
                       
                       <input type="text" id="form4Example1" class="form-control" placeholder="Name" />
@@ -959,6 +961,89 @@ background-blend-mode: lighten;">
             </div>
           </div>
         </div>
+
+        <!-------------------- MODAL CHECKOUT ------------------------------------------>
+    <div class="modal fade" id="staticBackdrop12" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-lg" >
+      <div class="modal-content" style="background-color: rgb(228, 228, 228); ">
+        <div class="modal-header">
+          <h2 class="modal-title" id="staticBackdropLabel"><b>Payment</b></h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          
+          <div class="card-body m-4 p-2">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h5 class="mb-0">Card details</h5>
+                <svg class="img-fluid rounded-3" style="width: 55px;" alt="Avatar" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill-check" viewBox="0 0 16 16">
+                  <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m1.679-4.493-1.335 2.226a.75.75 0 0 1-1.174.144l-.774-.773a.5.5 0 0 1 .708-.708l.547.548 1.17-1.951a.5.5 0 1 1 .858.514M11 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                  <path d="M2 13c0 1 1 1 1 1h5.256A4.5 4.5 0 0 1 8 12.5a4.5 4.5 0 0 1 1.544-3.393Q8.844 9.002 8 9c-5 0-6 3-6 4"/>
+                </svg>
+            </div>
+ 
+            <p class="small mb-2">Card type</p>
+            <a href="#!" type="submit" class="text-secondary"><i class="fab fa-cc-mastercard fa-2x me-2" aria-hidden="true"></i></a>
+            <a href="#!" type="submit" class="text-secondary"><i class="fab fa-cc-visa fa-2x me-2" aria-hidden="true"></i></a>
+            <a href="#!" type="submit" class="text-secondary"><i class="fab fa-cc-amex fa-2x me-2" aria-hidden="true"></i></a>
+            <a href="#!" type="submit" class="text-secondary"><i class="fab fa-cc-paypal fa-2x" aria-hidden="true"></i></a>
+ 
+            <form class="mt-4">
+                <div class="form-outline form-white mb-4">
+                    <input type="text" id="typeName" class="form-control form-control-lg" siez="17" placeholder="Cardholder's Name">
+                    <label class="form-label" for="typeName">Cardholder's Name</label>
+                </div>
+ 
+                <div class="form-outline form-white mb-4">
+                    <input type="text" id="typeText" class="form-control form-control-lg" siez="17" placeholder="1234 5678 9012 3457" minlength="19" maxlength="19">
+                    <label class="form-label" for="typeText">Card Number</label>
+                </div>
+ 
+                <div class="row mb-4">
+                    <div class="col-md-6">
+                        <div class="form-outline form-white">
+                            <input type="text" id="typeExp" class="form-control form-control-lg" placeholder="MM/YYYY" size="7" minlength="7" maxlength="7">
+                            <label class="form-label" for="typeExp">Expiration</label>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-outline form-white">
+                            <input type="password" id="typeText" class="form-control form-control-lg" placeholder="●●●" size="1" minlength="3" maxlength="3">
+                            <label class="form-label" for="typeText">Cvv</label>
+                        </div>
+                    </div>
+                </div>
+              </form>
+ 
+              <hr class="my-4">
+   
+              <div class="d-flex justify-content-between">
+                  <p class="mb-2">Subtotal</p>
+                  <p id="valCompras" class="mb-2"></p>
+              </div>
+   
+              <div class="d-flex justify-content-between">
+                  <p class="mb-2">Shipping</p>
+                  <p class="mb-2">10€</p>
+              </div>
+   
+              <div class="d-flex justify-content-between mb-4">
+                  <p class="mb-2">Total(Incl. taxes)</p>
+                  <p id="valTotalCompras" class="mb-2"></p>
+              </div>
+   
+              <button type="button" class="btn btn-dark btn-block btn-lg">
+                  <div class="d-flex justify-content-between">
+                      <span id="valCheckout"></span>
+                      <span>&nbsp Checkout <i class="fas fa-long-arrow-alt-right ms-2" aria-hidden="true"></i></span>
+                  </div>
+              </button>
+ 
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
      <!------------------------------------------------- DIVISÃO PARA MODALS --------------------------------------------------------->
       </div>
 

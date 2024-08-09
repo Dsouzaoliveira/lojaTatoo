@@ -85,7 +85,7 @@ function redirectToIndex(){
     if (file) {
         const reader = new FileReader(); // Criar um objecto FileReader
         reader.onload = function(e) {
-            const content = e.target.result; // Get the file content
+            const content = e.target.result; 
             console.log(content); // conteudo do ficheiro
             const wordsArray = content.split(' '); // Fazer parsing por espaco
             // content do ficheiro vai para um array com duas posicoes uma para user e outra para password
@@ -97,9 +97,9 @@ function redirectToIndex(){
             console.log('Pass:', parsedPass);
             document.getElementById('idUtilizador').innerHTML = parsedUser;
             closeModal('staticBackdrop4');
-            //document.getElementById('fileContent').textContent = content; // Display the content
+            //document.getElementById('fileContent').textContent = content; 
         };
-        reader.readAsText(file); // Read the file as text
+        reader.readAsText(file); // Ler ficheiro como texto
     } else {
         console.log('No file selected');
     }
@@ -158,4 +158,14 @@ $('#staticBackdrop11').on('shown.bs.modal', function () {
  const temp = document.getElementById('idUtilizador').innerHTML 
  
  document.getElementById('idUtilizador2').innerHTML = temp;
+})
+
+
+//Função para calcular o preço a pagar
+$('#staticBackdrop12').on('shown.bs.modal', function () {
+  // Code to be executed when the modal is opened
+  document.getElementById('valCompras').innerHTML = document.getElementById('totalCompras').innerHTML;
+  const valPreco = parseInt(document.getElementById('totalCompras').innerHTML);
+  document.getElementById('valTotalCompras').innerHTML = valPreco + 10 + '€';
+  document.getElementById('valCheckout').innerHTML = document.getElementById('valTotalCompras').innerHTML;
 })
