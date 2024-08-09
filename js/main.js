@@ -169,3 +169,4 @@ $('#staticBackdrop12').on('shown.bs.modal', function () {
   document.getElementById('valTotalCompras').innerHTML = valPreco + 10 + '€';
   document.getElementById('valCheckout').innerHTML = document.getElementById('valTotalCompras').innerHTML;
 })
+
